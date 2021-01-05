@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Lucky Game</title>
+	 <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	
+	
+	<style>
+
+body{background-image: url("white.jpg");
+            -webkit-background-size:cover;       
+            max-width:100%;
+			background-size:cover;
+          background-position:center;
+            }
+
+
+		.box {
+			width: 1000px;
+			background: rgb(134, 127, 127);
+			padding: 50px;
+			margin-top: 3%;
+			margin-left: 30%;
+			margin-right: 24%;
+			margin-bottom: 15%;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			font-size: 20px;
+		}
+
+		.text{color: black;
+		font-style: bold;
+		text-align: center;
+		font-size: 75px;
+		padding:70px;
+		margin-bottom: 10px;
+		margin-left: 15%;
+		margin-right: 7%;
+		margin-top: 3px;
+		}
+
+		.text2 {color: black;
+		font-style: bold;
+		text-align: center;
+		font-size: 27px;
+		}
+		
+	</style>
+</head>
+
+<body>
+		<p class="text">Lucky Letters</h3>
+  
+	<div class="box">
+		<h5>Try your luck!</h5>
+		<div>
+			<input type="text" id="input" placeholder="Type here...">
+      </div>
+      <div>
+         <button onclick="random()" class="black-text purple lighten-2 btn">Play</button>
+      </div>
+      <p class="black-text" id="thirdletter"></p> 
+      <p class="black-text" id="response"></p>
+    </div>
+
+	<div class="footer-copyright">
+                  <div class="container">
+                  <p class="text2">&copy;Bisola for PearlsAfrica 2020<p>
+                  </div>  
+             </div>
+        </footer>
+
+    <script src="game.js"></script>
+  </body>
+</html>
